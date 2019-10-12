@@ -35,9 +35,11 @@
                     style="@style/question" />
 
                 <LinearLayout
-                    android:id="@+id/question1_choice1"
+                    android:id="@+id/linearLayout1_choice1"
                     style="@style/linearLayout">
-                    <CheckBox style="@style/checkBox"/>
+                    <CheckBox
+                        android:id="@+id/question1_choice1"
+                        style="@style/checkBox"/>
 
                     <TextView
                         android:text="@string/php"
@@ -45,17 +47,18 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/question1_choice2"
+                    android:id="@+id/linearLayout1_choice2"
                     style="@style/linearLayout">
-                    <CheckBox style="@style/checkBox" />
+                    <CheckBox
+                        android:id="@+id/question1_choice2"
+                        style="@style/checkBox" />
 
                     <TextView
                         style="@style/choice"
                         android:text="@string/vb_net" />
                 </LinearLayout>
 
-                <LinearLayout
-                    style="@style/linearLayout">
+                <LinearLayout style="@style/linearLayout">
                     <CheckBox
                         android:id="@+id/question1_choice3"
                         style="@style/checkBox" />
@@ -66,9 +69,11 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/question1_choice4"
+                    android:id="@+id/linearLayout1_choice4"
                     style="@style/linearLayout">
-                    <CheckBox style="@style/checkBox" />
+                    <CheckBox
+                        android:id="@+id/question1_choice4"
+                        style="@style/checkBox" />
 
                     <TextView
                         style="@style/choice"
@@ -156,9 +161,11 @@
                     style="@style/question"/>
 
                 <LinearLayout
-                    android:id="@+id/question5_choice1"
+                    android:id="@+id/linearLayout5_choice1"
                     style="@style/linearLayout">
-                    <CheckBox style="@style/checkBox"/>
+                    <CheckBox
+                        android:id="@+id/question5_choice1"
+                        style="@style/checkBox"/>
 
                     <TextView
                         style="@style/choice"
@@ -166,9 +173,11 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/question5_choice2"
+                    android:id="@+id/linearLayout5_choice2"
                     style="@style/linearLayout">
-                    <CheckBox style="@style/checkBox"/>
+                    <CheckBox
+                        android:id="@+id/question5_choice2"
+                        style="@style/checkBox"/>
 
                     <TextView
                         style="@style/choice"
@@ -176,9 +185,11 @@
                 </LinearLayout>
 
                 <LinearLayout
-                android:id="@+id/question5_choice3"
+                android:id="@+id/linearLayout5_choice3"
                     style="@style/linearLayout">
-                <CheckBox style="@style/checkBox"/>
+                <CheckBox
+                    android:id="@+id/question5_choice3"
+                    style="@style/checkBox"/>
 
                 <TextView
                     style="@style/choice"
@@ -226,9 +237,11 @@
                     style="@style/question"/>
 
                 <LinearLayout
-                    android:id="@+id/question7_choice1"
+                    android:id="@+id/linearLayout7_choice1"
                     style="@style/linearLayout">
-                    <CheckBox style="@style/checkBox"/>
+                    <CheckBox
+                        android:id="@+id/question7_choice1"
+                        style="@style/checkBox"/>
 
                     <TextView
                         style="@style/choice"
@@ -236,9 +249,11 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/question7_choice2"
+                    android:id="@+id/linearLayout7_choice2"
                     style="@style/linearLayout">
-                    <CheckBox style="@style/checkBox"/>
+                    <CheckBox
+                        android:id="@+id/question7_choice2"
+                        style="@style/checkBox"/>
 
                     <TextView
                         style="@style/choice"
@@ -246,9 +261,11 @@
                 </LinearLayout>
 
                 <LinearLayout
-                android:id="@+id/question7_choice3"
+                android:id="@+id/linearLayout7_choice3"
                     style="@style/linearLayout">
-                <CheckBox style="@style/checkBox" />
+                <CheckBox
+                    android:id="@+id/question7_choice3"
+                    style="@style/checkBox" />
 
                 <TextView
                     style="@style/choice"
@@ -321,10 +338,12 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/question9_choice3"
+                    android:id="@+id/linearLayout9_choice3"
                     style="@style/linearLayout"
                     android:layout_marginBottom="@dimen/dp_3">
-                    <CheckBox style="@style/checkBox"/>
+                    <CheckBox
+                        android:id="@+id/question9_choice3"
+                        style="@style/checkBox"/>
 
                     <TextView
                         style="@style/choice"
@@ -332,10 +351,12 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/question9_choice4"
+                    android:id="@+id/linearLayout9_choice4"
                     style="@style/linearLayout"
                     android:layout_marginBottom="@dimen/dp_3">
-                    <CheckBox style="@style/checkBox"/>
+                    <CheckBox
+                        android:id="@+id/question9_choice4"
+                        style="@style/checkBox"/>
 
                     <TextView
                         style="@style/choice"

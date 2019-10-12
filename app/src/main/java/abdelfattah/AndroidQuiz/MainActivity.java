@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
      */
     Button submit;
     int correctAnswers = 0;
-    CheckBox question1_choice3,
-            question5_choice4,
-            question7_choice4,
-            question9_choice1, question9_choice2;
+    CheckBox question1_choice3, question1_choice1, question1_choice2, question1_choice4,
+            question5_choice4, question5_choice1, question5_choice2, question5_choice3,
+            question7_choice4, question7_choice1, question7_choice2, question7_choice3,
+            question9_choice1, question9_choice2, question9_choice3, question9_choice4;
     RadioButton
             question2_choice1, question2_choice2, question2_choice3, question2_choice4,
             question3_choice1, question3_choice2, question3_choice3, question3_choice4,
@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
             question6_choice1, question6_choice2, question6_choice3, question6_choice4,
             question8_choice1, question8_choice2, question8_choice3, question8_choice4,
             question10_choice1, question10_choice2, question10_choice3, question10_choice4;
-    LinearLayout question1_choice1, question1_choice2, question1_choice4,
-            question5_choice1, question5_choice2, question5_choice3,
-            question7_choice1, question7_choice2, question7_choice3,
-            question9_choice3, question9_choice4;
+    LinearLayout linearLayout1_choice1, linearLayout1_choice2, linearLayout1_choice4,
+            linearLayout5_choice1, linearLayout5_choice2, linearLayout5_choice3,
+            linearLayout7_choice1, linearLayout7_choice2, linearLayout7_choice3,
+            linearLayout9_choice3, linearLayout9_choice4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,10 +50,17 @@ public class MainActivity extends AppCompatActivity {
      */
     private void checkQuestionOneAnswers() {
 
+        question1_choice1 = (CheckBox) findViewById ( R.id.question1_choice1 );
+        question1_choice2 = (CheckBox) findViewById ( R.id.question1_choice2 );
         question1_choice3 = (CheckBox) findViewById ( R.id.question1_choice3 );
-        boolean isquestion1_choice3Checked = question1_choice3.isChecked ();
+        question1_choice4 = (CheckBox) findViewById ( R.id.question1_choice4 );
+        boolean isQuestion1_choice1Checked = question1_choice1.isChecked ();
+        boolean isQuestion1_choice2Checked = question1_choice2.isChecked ();
+        boolean isQuestion1_choice3Checked = question1_choice3.isChecked ();
+        boolean isQuestion1_choice4Checked = question1_choice4.isChecked ();
 
-        if (isquestion1_choice3Checked) {
+        if (!isQuestion1_choice1Checked && !isQuestion1_choice2Checked
+            && isQuestion1_choice3Checked && !isQuestion1_choice4Checked) {
             correctAnswers += 1;
         }
     }
@@ -63,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void checkQuestionTwoAnswers() {
         question2_choice3 = (RadioButton) findViewById ( R.id.question2_choice3 );
-        boolean isquestion2_choice3Checked = question2_choice3.isChecked ();
-        if (isquestion2_choice3Checked) {
+        boolean isQuestion2_choice3Checked = question2_choice3.isChecked ();
+        if (isQuestion2_choice3Checked) {
             correctAnswers += 1;
         }
     }
@@ -74,8 +81,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void checkQuestionThreeAnswers() {
         question3_choice1 = (RadioButton) findViewById ( R.id.question3_choice1 );
-        boolean isquestion3_choice1Checked = question3_choice1.isChecked ();
-        if (isquestion3_choice1Checked) {
+        boolean isQuestion3_choice1Checked = question3_choice1.isChecked ();
+        if (isQuestion3_choice1Checked) {
             correctAnswers += 1;
         }
     }
@@ -85,8 +92,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void checkQuestionFourAnswers() {
         question4_choice1 = (RadioButton) findViewById ( R.id.question4_choice1 );
-        boolean isquestion4_choice1Checked = question4_choice1.isChecked ();
-        if (isquestion4_choice1Checked) {
+        boolean isQuestion4_choice1Checked = question4_choice1.isChecked ();
+        if (isQuestion4_choice1Checked) {
             correctAnswers += 1;
         }
     }
@@ -95,10 +102,17 @@ public class MainActivity extends AppCompatActivity {
      * Check question five answers .
      */
     private void checkQuestionFiveAnswers() {
+        question5_choice1 = (CheckBox) findViewById ( R.id.question5_choice1 );
+        question5_choice2 = (CheckBox) findViewById ( R.id.question5_choice2 );
+        question5_choice3 = (CheckBox) findViewById ( R.id.question5_choice3 );
         question5_choice4 = (CheckBox) findViewById ( R.id.question5_choice4 );
-        boolean isquestion5_choice4Checked = question5_choice4.isChecked ();
+        boolean isQuestion5_choice1Checked = question5_choice1.isChecked ();
+        boolean isQuestion5_choice2Checked = question5_choice2.isChecked ();
+        boolean isQuestion5_choice3Checked = question5_choice3.isChecked ();
+        boolean isQuestion5_choice4Checked = question5_choice4.isChecked ();
 
-        if (isquestion5_choice4Checked) {
+        if (isQuestion5_choice4Checked && !isQuestion5_choice1Checked
+            && !isQuestion5_choice2Checked && !isQuestion5_choice3Checked) {
             correctAnswers += 1;
         }
     }
@@ -108,8 +122,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void checkQuestionSexAnswers() {
         question6_choice4 = (RadioButton) findViewById ( R.id.question6_choice4 );
-        boolean isquestion6_choice4Checked = question6_choice4.isChecked ();
-        if (isquestion6_choice4Checked) {
+        boolean isQuestion6_choice4Checked = question6_choice4.isChecked ();
+        if (isQuestion6_choice4Checked) {
             correctAnswers += 1;
         }
     }
@@ -118,11 +132,18 @@ public class MainActivity extends AppCompatActivity {
      * Check question seven answers .
      */
     private void checkQuestionSevenAnswers() {
+        question7_choice1 = (CheckBox) findViewById ( R.id.question7_choice1 );
+        question7_choice2 = (CheckBox) findViewById ( R.id.question7_choice2 );
+        question7_choice3 = (CheckBox) findViewById ( R.id.question7_choice3 );
         question7_choice4 = (CheckBox) findViewById ( R.id.question7_choice4 );
-        boolean isquestion7_choice4Checked = question7_choice4.isChecked ();
+        boolean isQuestion7_choice1Checked = question7_choice1.isChecked ();
+        boolean isQuestion7_choice2Checked = question7_choice2.isChecked ();
+        boolean isQuestion7_choice3Checked = question7_choice3.isChecked ();
+        boolean isQuestion7_choice4Checked = question7_choice4.isChecked ();
 
 
-        if (isquestion7_choice4Checked) {
+        if (isQuestion7_choice4Checked && !isQuestion7_choice1Checked
+            && !isQuestion7_choice2Checked && !isQuestion7_choice3Checked) {
             correctAnswers += 1;
         }
     }
@@ -132,8 +153,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void checkQuestionEighthAnswers() {
         question8_choice3 = (RadioButton) findViewById ( R.id.question8_choice3 );
-        boolean isquestion8_choice3Checked = question8_choice3.isChecked ();
-        if (isquestion8_choice3Checked) {
+        boolean isQuestion8_choice3Checked = question8_choice3.isChecked ();
+        if (isQuestion8_choice3Checked) {
             correctAnswers += 1;
         }
     }
@@ -144,12 +165,15 @@ public class MainActivity extends AppCompatActivity {
     private void checkQuestionNineAnswers() {
         question9_choice1 = (CheckBox) findViewById ( R.id.question9_choice1 );
         question9_choice2 = (CheckBox) findViewById ( R.id.question9_choice2 );
+        question9_choice3 = (CheckBox) findViewById ( R.id.question9_choice3 );
+        question9_choice4 = (CheckBox) findViewById ( R.id.question9_choice4 );
 
-        boolean isquestion9_choice1Checked = question9_choice1.isChecked ();
-        boolean isquestion9_choice2Checked = question9_choice2.isChecked ();
-
-
-        if (isquestion9_choice1Checked && isquestion9_choice2Checked) {
+        boolean isQuestion9_choice1Checked = question9_choice1.isChecked ();
+        boolean isQuestion9_choice2Checked = question9_choice2.isChecked ();
+        boolean isQuestion9_choice3Checked = question9_choice3.isChecked ();
+        boolean isQuestion9_choice4Checked = question9_choice4.isChecked ();
+        if (isQuestion9_choice1Checked && isQuestion9_choice2Checked
+            && !isQuestion9_choice3Checked && !isQuestion9_choice4Checked) {
             correctAnswers += 1;
         }
     }
@@ -159,8 +183,8 @@ public class MainActivity extends AppCompatActivity {
      */
     private void checkQuestionTenAnswers() {
         question10_choice4 = (RadioButton) findViewById ( R.id.question10_choice4 );
-        boolean isquestion10_choice4Checked = question10_choice4.isChecked ();
-        if (isquestion10_choice4Checked) {
+        boolean isQuestion10_choice4Checked = question10_choice4.isChecked ();
+        if (isQuestion10_choice4Checked) {
             correctAnswers += 1;
         }
     }
@@ -192,12 +216,12 @@ public class MainActivity extends AppCompatActivity {
      * Hide all wrong answers
      */
     private void getAnswer() {
-        question1_choice1 = (LinearLayout) findViewById ( R.id.question1_choice1 );
-        question1_choice2 = (LinearLayout) findViewById ( R.id.question1_choice2 );
-        question1_choice4 = (LinearLayout) findViewById ( R.id.question1_choice4 );
-        question1_choice1.setVisibility ( View.GONE );
-        question1_choice2.setVisibility ( View.GONE );
-        question1_choice4.setVisibility ( View.GONE );
+        linearLayout1_choice1 = (LinearLayout) findViewById ( R.id.linearLayout1_choice1 );
+        linearLayout1_choice2 = (LinearLayout) findViewById ( R.id.linearLayout1_choice2 );
+        linearLayout1_choice4 = (LinearLayout) findViewById ( R.id.linearLayout1_choice4 );
+        linearLayout1_choice1.setVisibility ( View.GONE );
+        linearLayout1_choice2.setVisibility ( View.GONE );
+        linearLayout1_choice4.setVisibility ( View.GONE );
         question2_choice1 = (RadioButton) findViewById ( R.id.question2_choice1 );
         question2_choice2 = (RadioButton) findViewById ( R.id.question2_choice2 );
         question2_choice4 = (RadioButton) findViewById ( R.id.question2_choice4 );
@@ -216,34 +240,34 @@ public class MainActivity extends AppCompatActivity {
         question4_choice3.setVisibility ( View.GONE );
         question4_choice2.setVisibility ( View.GONE );
         question4_choice4.setVisibility ( View.GONE );
-        question5_choice1 = (LinearLayout) findViewById ( R.id.question5_choice1 );
-        question5_choice2 = (LinearLayout) findViewById ( R.id.question5_choice2 );
-        question5_choice3 = (LinearLayout) findViewById ( R.id.question5_choice3 );
-        question5_choice1.setVisibility ( View.GONE );
-        question5_choice2.setVisibility ( View.GONE );
-        question5_choice3.setVisibility ( View.GONE );
+        linearLayout5_choice1 = (LinearLayout) findViewById ( R.id.linearLayout5_choice1 );
+        linearLayout5_choice2 = (LinearLayout) findViewById ( R.id.linearLayout5_choice2 );
+        linearLayout5_choice3 = (LinearLayout) findViewById ( R.id.linearLayout5_choice3 );
+        linearLayout5_choice1.setVisibility ( View.GONE );
+        linearLayout5_choice2.setVisibility ( View.GONE );
+        linearLayout5_choice3.setVisibility ( View.GONE );
         question6_choice3 = (RadioButton) findViewById ( R.id.question6_choice3 );
         question6_choice2 = (RadioButton) findViewById ( R.id.question6_choice2 );
         question6_choice1 = (RadioButton) findViewById ( R.id.question6_choice1 );
         question6_choice3.setVisibility ( View.GONE );
         question6_choice2.setVisibility ( View.GONE );
         question6_choice1.setVisibility ( View.GONE );
-        question7_choice1 = (LinearLayout) findViewById ( R.id.question7_choice1 );
-        question7_choice2 = (LinearLayout) findViewById ( R.id.question7_choice2 );
-        question7_choice3 = (LinearLayout) findViewById ( R.id.question7_choice3 );
-        question7_choice1.setVisibility ( View.GONE );
-        question7_choice2.setVisibility ( View.GONE );
-        question7_choice3.setVisibility ( View.GONE );
+        linearLayout7_choice1 = (LinearLayout) findViewById ( R.id.linearLayout7_choice1 );
+        linearLayout7_choice2 = (LinearLayout) findViewById ( R.id.linearLayout7_choice2 );
+        linearLayout7_choice3 = (LinearLayout) findViewById ( R.id.linearLayout7_choice3 );
+        linearLayout7_choice1.setVisibility ( View.GONE );
+        linearLayout7_choice2.setVisibility ( View.GONE );
+        linearLayout7_choice3.setVisibility ( View.GONE );
         question8_choice4 = (RadioButton) findViewById ( R.id.question8_choice4 );
         question8_choice2 = (RadioButton) findViewById ( R.id.question8_choice2 );
         question8_choice1 = (RadioButton) findViewById ( R.id.question8_choice1 );
         question8_choice4.setVisibility ( View.GONE );
         question8_choice2.setVisibility ( View.GONE );
         question8_choice1.setVisibility ( View.GONE );
-        question9_choice3 = (LinearLayout) findViewById ( R.id.question9_choice3 );
-        question9_choice4 = (LinearLayout) findViewById ( R.id.question9_choice4 );
-        question9_choice3.setVisibility ( View.GONE );
-        question9_choice4.setVisibility ( View.GONE );
+        linearLayout9_choice3 = (LinearLayout) findViewById ( R.id.linearLayout9_choice3 );
+        linearLayout9_choice4 = (LinearLayout) findViewById ( R.id.linearLayout9_choice4 );
+        linearLayout9_choice3.setVisibility ( View.GONE );
+        linearLayout9_choice4.setVisibility ( View.GONE );
         question10_choice3 = (RadioButton) findViewById ( R.id.question10_choice3 );
         question10_choice2 = (RadioButton) findViewById ( R.id.question10_choice2 );
         question10_choice1 = (RadioButton) findViewById ( R.id.question10_choice1 );
