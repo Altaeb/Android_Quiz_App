@@ -60,4 +60,11 @@
     <string name="progressdialog_can_be_freely_configured_to_use_a_drawable_class_to_display_as_its_progress_bar">ProgressDialog can be freely configured to use a Drawable class to display as its progress bar.</string>
     <string name="progressdialog_can_be_set_as_2_types_of_style_style_horizontal_and_style_spinner">ProgressDialog can be set as 2 types of style:STYLE_HORIZONTAL and STYLE_SPINNER.</string>
     <string name="progressdialog_is_able_to_apply_a_custom_xml_defined_layout_by_using_the_setcontentview_method">ProgressDialog is able to apply a custom XML-defined layout by using the setContentView.(...) method.</string>
+    <string name="try_again">try again</string>
+    <string name="show_answer">show answer</string>
+    <string name="submit">submit</string>
+    <string name="correct_answers">Correct Answers:</string>
+    <string name="_10">/10</string>
+    <string name="congratulations_">Congratulations, all your answers are correct</string>
+    <string name="the_result">The result</string>
 </resources>

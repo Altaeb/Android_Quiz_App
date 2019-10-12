@@ -11,7 +11,6 @@ import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -262,10 +261,10 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(final View v) {
             checkAllQuestions ();
             if (correctAnswers != 10) {
-                String message = "Correct Answers: " + correctAnswers + "/10";
+                String message = getString ( R.string.correct_answers ) + correctAnswers + getString ( R.string._10 );
                 Dialog ( message );
             } else {
-                String message = "Congratulations, all your answers are correct";
+                String message = getString ( R.string.congratulations_ );
                 Dialog ( message );
             }
             resetCounterCorrectAnswers ();
@@ -285,14 +284,14 @@ public class MainActivity extends AppCompatActivity {
         //  Inflate the Layout Resource file.
         View mView = getLayoutInflater ().inflate ( R.layout.dialog, null );
 
-        mBuilder.setTitle ( "The result" );
+        mBuilder.setTitle ( getString ( R.string.the_result ) );
 
-        final TextView theWinTextView = (TextView) mView.findViewById ( R.id.et_thewin );
+        final TextView theWinTextView = (TextView) mView.findViewById ( R.id.et_theresult );
         theWinTextView.setText ( Message );
 
         Button btnReset = (Button) mView.findViewById ( R.id.btnReset );
         Button btnAnswer = (Button) mView.findViewById ( R.id.btnAnswer );
-        if (Message == "Congratulations, all your answers are correct") {
+        if (Message == getString ( R.string.congratulations_ )) {
             btnReset.setVisibility ( View.GONE );
         }
 

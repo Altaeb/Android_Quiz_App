@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/et_thewin"
+        android:id="@+id/et_theresult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="inter_the_value"
-        android:layout_margin="15dp"
-        android:textSize="25sp" />
+        android:layout_margin="@dimen/dp_15"
+        android:hint="@string/the_result"
+        android:textSize="@dimen/sp_25" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,18 +22,18 @@
             android:id="@+id/btnReset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
             android:layout_weight="1"
-            android:text="try again"
-            android:layout_margin="10dp"
-            android:background="@color/colorAccent"/>
+            android:background="@color/colorAccent"
+            android:text="@string/try_again" />
 
         <Button
             android:id="@+id/btnAnswer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
             android:layout_weight="1"
-            android:layout_margin="10dp"
-            android:text="show answer"
-            android:background="@color/colorAccent"/>
+            android:background="@color/colorAccent"
+            android:text="@string/show_answer" />
     </LinearLayout>
 </LinearLayout>
