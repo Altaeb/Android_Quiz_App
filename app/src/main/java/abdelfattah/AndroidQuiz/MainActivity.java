@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -18,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
      * Declaration of global variables used
      */
     Button submit;
+    EditText userInputLastName;
     int correctAnswers = 0;
-    CheckBox question1_choice3, question1_choice1, question1_choice2, question1_choice4,
-            question5_choice4, question5_choice1, question5_choice2, question5_choice3,
+    CheckBox question5_choice4, question5_choice1, question5_choice2, question5_choice3,
             question7_choice4, question7_choice1, question7_choice2, question7_choice3,
             question9_choice1, question9_choice2, question9_choice3, question9_choice4;
     RadioButton
@@ -30,8 +31,7 @@ public class MainActivity extends AppCompatActivity {
             question6_choice1, question6_choice2, question6_choice3, question6_choice4,
             question8_choice1, question8_choice2, question8_choice3, question8_choice4,
             question10_choice1, question10_choice2, question10_choice3, question10_choice4;
-    LinearLayout linearLayout1_choice1, linearLayout1_choice2, linearLayout1_choice4,
-            linearLayout5_choice1, linearLayout5_choice2, linearLayout5_choice3,
+    LinearLayout linearLayout5_choice1, linearLayout5_choice2, linearLayout5_choice3,
             linearLayout7_choice1, linearLayout7_choice2, linearLayout7_choice3,
             linearLayout9_choice3, linearLayout9_choice4;
 
@@ -48,21 +48,10 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Check question one answers .
      */
-    private void checkQuestionOneAnswers() {
-
-        question1_choice1 = (CheckBox) findViewById ( R.id.question1_choice1 );
-        question1_choice2 = (CheckBox) findViewById ( R.id.question1_choice2 );
-        question1_choice3 = (CheckBox) findViewById ( R.id.question1_choice3 );
-        question1_choice4 = (CheckBox) findViewById ( R.id.question1_choice4 );
-        boolean isQuestion1_choice1Checked = question1_choice1.isChecked ();
-        boolean isQuestion1_choice2Checked = question1_choice2.isChecked ();
-        boolean isQuestion1_choice3Checked = question1_choice3.isChecked ();
-        boolean isQuestion1_choice4Checked = question1_choice4.isChecked ();
-
-        if (!isQuestion1_choice1Checked && !isQuestion1_choice2Checked
-            && isQuestion1_choice3Checked && !isQuestion1_choice4Checked) {
-            correctAnswers += 1;
-        }
+    private String getQuestionOneUserInput() {
+        userInputLastName = (EditText) findViewById ( R.id.answerInputUserLanguage );
+        String name = userInputLastName.getText ().toString ();
+        return name;
     }
 
     /**
@@ -189,11 +178,18 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void checkQuestionOneAnswer() {
+        String name = getQuestionOneUserInput ();
+        if (name.trim ().equalsIgnoreCase ( "java" )) {
+            correctAnswers += 1;
+        }
+    }
+
     /**
      * Check all questions .
      */
     private void checkAllQuestions() {
-        checkQuestionOneAnswers ();
+        checkQuestionOneAnswer ();
         checkQuestionTwoAnswers ();
         checkQuestionThreeAnswers ();
         checkQuestionFourAnswers ();
@@ -216,12 +212,7 @@ public class MainActivity extends AppCompatActivity {
      * Hide all wrong answers
      */
     private void getAnswer() {
-        linearLayout1_choice1 = (LinearLayout) findViewById ( R.id.linearLayout1_choice1 );
-        linearLayout1_choice2 = (LinearLayout) findViewById ( R.id.linearLayout1_choice2 );
-        linearLayout1_choice4 = (LinearLayout) findViewById ( R.id.linearLayout1_choice4 );
-        linearLayout1_choice1.setVisibility ( View.GONE );
-        linearLayout1_choice2.setVisibility ( View.GONE );
-        linearLayout1_choice4.setVisibility ( View.GONE );
+        userInputLastName.setText ( "JAVA" );
         question2_choice1 = (RadioButton) findViewById ( R.id.question2_choice1 );
         question2_choice2 = (RadioButton) findViewById ( R.id.question2_choice2 );
         question2_choice4 = (RadioButton) findViewById ( R.id.question2_choice4 );

@@ -67,4 +67,5 @@
     <string name="_10">/10</string>
     <string name="congratulations_">مبروك ، كل إجاباتك صحيحة</string>
     <string name="the_result">النتيجة</string>
+    <string name="language">اسم اللغة</string>
 </resources>

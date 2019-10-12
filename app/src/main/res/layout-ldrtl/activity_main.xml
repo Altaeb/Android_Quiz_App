@@ -34,51 +34,10 @@
                     android:text="@string/question1"
                     style="@style/question" />
 
-                <LinearLayout
-                    android:id="@+id/linearLayout1_choice1"
-                    style="@style/linearLayout">
-                    <CheckBox
-                        android:id="@+id/question1_choice1"
-                        style="@style/checkBox"/>
-
-                    <TextView
-                        android:text="@string/php"
-                        style="@style/choice" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/linearLayout1_choice2"
-                    style="@style/linearLayout">
-                    <CheckBox
-                        android:id="@+id/question1_choice2"
-                        style="@style/checkBox" />
-
-                    <TextView
-                        style="@style/choice"
-                        android:text="@string/vb_net" />
-                </LinearLayout>
-
-                <LinearLayout style="@style/linearLayout">
-                    <CheckBox
-                        android:id="@+id/question1_choice3"
-                        style="@style/checkBox" />
-
-                    <TextView
-                        style="@style/choice"
-                        android:text="@string/java" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/linearLayout1_choice4"
-                    style="@style/linearLayout">
-                    <CheckBox
-                        android:id="@+id/question1_choice4"
-                        style="@style/checkBox" />
-
-                    <TextView
-                        style="@style/choice"
-                        android:text="@string/c" />
-                </LinearLayout>
+                <EditText
+                    android:id="@+id/answerInputUserLanguage"
+                    android:hint="@string/language"
+                    style="@style/EditText" />
 
                 <TextView
                     android:text="@string/question2title"

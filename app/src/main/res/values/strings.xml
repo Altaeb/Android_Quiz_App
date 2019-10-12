@@ -67,4 +67,5 @@
     <string name="_10">/10</string>
     <string name="congratulations_">Congratulations, all your answers are correct</string>
     <string name="the_result">The result</string>
+    <string name="language">Name Language</string>
 </resources>
