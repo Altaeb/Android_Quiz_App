@@ -17,13 +17,13 @@ Checkboxes are only used for questions with multiple right answers.
 
 English                         | Arabic
 :--------------------------------:|:--------------------------------:
-![](app/screenshots/Quiz_EN_1.png)  |![](app/screenshots/Quiz_AR_1.png)
-![](app/screenshots/Quiz_EN_2.png)  |![](app/screenshots/Quiz_AR_2.png)
-![](app/screenshots/Quiz_EN_3.png)  |![](app/screenshots/Quiz_AR_3.png)
-![](app/screenshots/Quiz_EN_4.png)  |![](app/screenshots/Quiz_AR_4.png)
-![](app/screenshots/Quiz_EN_5.png)  |![](app/screenshots/Quiz_AR_5.png)
+![](app/Screenshots/Quiz_EN_1.png)  |![](app/Screenshots/Quiz_AR_1.png)
+![](app/Screenshots/Quiz_EN_2.png)  |![](app/Screenshots/Quiz_AR_2.png)
+![](app/Screenshots/Quiz_EN_3.png)  |![](app/Screenshots/Quiz_AR_3.png)
+![](app/Screenshots/Quiz_EN_4.png)  |![](app/Screenshots/Quiz_AR_4.png)
+![](app/Screenshots/Quiz_EN_5.png)  |![](app/Screenshots/Quiz_AR_5.png)
 
 
 
 # Download
-You can download the apk here [AndroidQuiz App](../../raw/master/app/screenshots/app-debug.apk)
+You can download the apk here [AndroidQuiz App](../../raw/master/app/Screenshots/app-debug.apk)
